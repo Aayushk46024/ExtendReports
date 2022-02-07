@@ -52,6 +52,7 @@ public class Listeners extends TestListenerAdapter{
         test=extent.createTest(result.getName());
         test.log(Status.SKIP, "Test Case Skipped is:"+result.getName());
     }
+
     public void onFinish(ITestContext testContext)
     {	System.out.println("On Finish");
         extent.flush();
